@@ -53,9 +53,13 @@ body{
 }
 
 #cardFimg{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     left: -200px;
     bottom: -50px;
-    padding-top: 6%;
+    padding-top: 1%;
     transform: rotate(-22.14deg);
     position: relative;
 }
@@ -133,13 +137,13 @@ body{
     margin-top: 15%;
     padding-top: 0;
     overflow: hidden;
-    height: 73px;
+    height: 64px;
 }
 
 .overflowDiv{
     width: 100%;
     position: relative;
-    top: -220px;
+    top: -100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -163,7 +167,7 @@ body{
 
 #inbillFeat:hover #inbillFimg{
     transition: all ease-in-out 300ms;
-    height: 41.5%;
+    height: auto;
     
 }
 
@@ -174,13 +178,14 @@ body{
 
 #inbillFeat:hover .overflowDiv{
     transition: all ease-in-out 300ms;
-    top:18%;
+    top:17.5%;
 }
 
 #barsFimg, #vendorFimg{
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100%;
 }
 
 #barsnumFlow{
@@ -201,7 +206,7 @@ body{
 
 #insrepFeat:hover #barsnumFlow{
     transition: all ease-in-out 300ms;
-    right: 10%;
+    right: 15%;
     z-index: 1;
 }
 
@@ -407,3 +412,395 @@ body{
     transition: all ease-in-out 300ms;
     display: block;
 }
+
+/* reponsive animation media query */
+
+@media (1000px <= width <= 1249px) {
+
+    #inbillFeat:hover .overflowDiv{
+        transition: all ease-in-out 300ms;
+        top:14%;
+    }
+
+    .featureImage{
+        width: 80%;
+    }
+
+    #cardFeat:hover .featureImage img{
+        width: 95%;
+    }
+
+    .featureList p{
+        font-size: 0.7rem;
+        line-height: 1.3rem;
+    }
+
+    .featureList{
+        height: 376px;
+    }
+
+    #inbillFimg{
+        height: 40px;
+    }
+
+    #cardFimg{
+        left: -60%;
+        margin-top: 7%;
+    }
+
+    .featureImage img{
+        width: 80%;
+    }
+
+    #pyrllFimg{
+        width: 90%;
+    }
+
+    #barssvg1{
+        width: 100%;
+        bottom: -20px;
+    }
+
+    #insrepFeat:hover #barssvg1{
+        transition: all ease-in-out 300ms;
+        bottom: 0;
+    }
+    #barnumsvg{
+        width: 45%;
+    }
+    #barsnumFlow{
+        top: 16.5%;
+    }
+
+    .bdgersona img{
+        width: 10%;
+    }
+
+    #expenseFeat:hover #expcheckFlow{
+        transition: all ease-in-out 300ms;
+        top: 4%;
+        z-index:1
+    }
+
+    .bdgtOwner{
+        font-size: 0.55rem;
+        margin-left: 0;
+    }
+    
+    .budgtAmt{
+        font-size: 0.55rem;
+    }
+    #insrepFeat:hover #barsnumFlow{
+        transition: all ease-in-out 300ms;
+        right: 12%;
+    }
+
+  }
+
+  @media (749px <= width <= 1000px) {
+      
+    .featureList{
+        width: 43%;
+        padding:  0 3% 4% 3%;
+    }
+
+    #inbillFeat:hover .overflowDiv{
+        transition: all ease-in-out 300ms;
+        top:7%;
+    }
+
+    .featureImage{
+        width: 80%;
+    }
+
+    #cardFeat:hover .featureImage img{
+        width: 95%;
+    }
+
+    .featureList p{
+        font-size: 0.7rem;
+        line-height: 1.3rem;
+    }
+
+    .featureList{
+        height: 376px;
+    }
+
+    #inbillFimg{
+        height: 60px;
+        margin-top: 0%;
+    }
+
+    #cardFimg{
+        left: -60%;
+        margin-top: 7%;
+    }
+
+    .featureImage img{
+        width: 80%;
+    }
+
+    #pyrllFimg{
+        width: 90%;
+    }
+
+    #barssvg1{
+        width: 100%;
+        bottom: -50px;
+    }
+
+    #insrepFeat:hover #barssvg1, #insrepFeat:hover #barsFimg{
+        transition: all ease-in-out 300ms;
+        bottom:-1px;
+    }
+    #barnumsvg{
+        width: 45%;
+    }
+    #barsnumFlow{
+        top: 24%;
+    }
+
+    .bdgersona img{
+        width: 10%;
+    }
+
+    #expenseFeat:hover #expcheckFlow{
+        transition: all ease-in-out 300ms;
+        top: 4%;
+        z-index:1
+    }
+
+    .bdgtOwner{
+        font-size: 0.55rem;
+        margin-left: 0;
+    }
+    
+    .budgtAmt{
+        font-size: 0.55rem;
+    }
+    #insrepFeat:hover #barsnumFlow{
+        transition: all ease-in-out 300ms;
+        right: 12%;
+    }
+
+  }
+
+  @media (499px <= width <= 748px) {
+
+    .featuresContainer{
+        justify-content: center;
+    }
+      
+    .featureList{
+        width: 70%;
+        padding:  0 4.5% 6.5% 4.5%;
+        margin-bottom: 5%;
+    }
+
+    #inbillFeat:hover .overflowDiv{
+        transition: all ease-in-out 300ms;
+        top:7%;
+    }
+
+    .featureImage{
+        width: 80%;
+    }
+
+    #cardFeat:hover .featureImage img{
+        width: 95%;
+    }
+
+    .featureList p{
+        font-size: 0.82rem;
+        line-height: 1.3rem;
+    }
+
+    .featureList{
+        height: 376px;
+    }
+
+    #inbillFimg{
+        height: 60px;
+        margin-top: 0%;
+    }
+
+    #cardFimg{
+        left: -60%;
+        margin-top: 3%;
+    }
+
+    .featureImage img{
+        width: 80%;
+    }
+
+    #pyrllFimg{
+        width: 90%;
+    }
+    
+    #pyrllFeat:hover #pyrllFimg{
+        margin-top: 7%;
+    }
+
+    #barssvg1{
+        width: 100%;
+        bottom: 10px;
+    }
+
+    #insrepFeat:hover #barssvg1, #insrepFeat:hover #barsFimg{
+        transition: all ease-in-out 300ms;
+        bottom:35px;
+    }
+    #barnumsvg{
+        width: 45%;
+    }
+    #barsnumFlow{
+        top: 20%;
+    }
+
+    .bdgersona img{
+        width: 10%;
+    }
+
+    #expenseFeat:hover #expcheckFlow{
+        transition: all ease-in-out 300ms;
+        top: 4%;
+        z-index:1
+    }
+
+    .bdgtOwner{
+        font-size: 0.55rem;
+        margin-left: 0;
+    }
+    
+    .budgtAmt{
+        font-size: 0.55rem;
+    }
+    #insrepFeat:hover #barsnumFlow{
+        transition: all ease-in-out 300ms;
+        right: 11.5%;
+    }
+
+  }
+
+
+  @media (300px <= width <= 498px) {
+    
+
+    #cardFimg, #cardFeat:hover #cardFimg{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        padding-top: 1%;
+        transform: rotate(0);
+        margin-top: 7%;
+    }
+
+    .featuresContainer{
+        justify-content: center;
+    }
+      
+    .featureList{
+        width: 85%;
+        padding:  0 6.5% 6.5% 6.5%;
+        margin-bottom: 5%;
+    }
+
+    #inbillFeat:hover .overflowDiv{
+        transition: all ease-in-out 300ms;
+        top:7%;
+    }
+
+    .featureImage{
+        width: 80%;
+    }
+
+
+    .featureList p{
+        font-size: 0.62rem;
+        line-height: 1rem;
+    }
+
+    .featureList{
+        height:300px;
+    }
+
+    #inbillFimg{
+        height: 60px;
+        margin-top: 0%;
+    }
+
+
+    .featureImage img{
+        width: 90%;
+    }
+
+    #pyrllFimg{
+        display: flex;
+        flex-wrap: wrap;
+        background: var(--brntOrange);
+        border-radius: 12px;
+        padding: 7% 5%;
+        width: 90%;
+        position: relative;
+        bottom: 0;
+        margin-top: 10%;
+    }
+    
+    #pyrsvg1{
+        width: 42%;
+        margin-right: 7%;
+        margin-bottom:3%;
+    }
+    
+    #pyrsvg2{
+        width: 47%;
+        margin-left: 0%;
+        margin-bottom: 3%;
+    }
+    
+
+    #barssvg1{
+        width: 100%;
+        bottom: 10px;
+    }
+
+    #insrepFeat:hover #barssvg1, #insrepFeat:hover #barsFimg{
+        transition: all ease-in-out 300ms;
+        bottom:35px;
+    }
+    #barnumsvg{
+        width: 45%;
+    }
+    #barsnumFlow{
+        top: 20%;
+    }
+
+    .bdgersona img{
+        width: 10%;
+    }
+
+    #expenseFeat:hover #expcheckFlow{
+        transition: all ease-in-out 300ms;
+        top: 4%;
+        z-index:1
+    }
+
+    .bdgtOwner{
+        font-size: 0.55rem;
+        margin-left: 0;
+    }
+    
+    .budgtAmt{
+        font-size: 0.55rem;
+    }
+    #insrepFeat:hover #barsnumFlow{
+        transition: all ease-in-out 300ms;
+        right: 11.5%;
+    }
+
+  }
