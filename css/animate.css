@@ -12,6 +12,8 @@ body{
     --gold: #DEB145;
     --green: #19C37D;
     --light-green: #EFFFED;
+    --white: #ffffff;
+    --lightpurple-300: #D5D5F5;
 }
 
 .bodyContainer{
@@ -268,4 +270,87 @@ body{
 
 #expsvgcheck{
     width: 12%;
+}
+
+#budgetsFimg{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: var(--white);
+    padding: 5% 0;
+    border: 4px solid var(--lightpurple-300);
+    border-radius: 12px;
+}
+
+#bgttopsvg{
+    width: 90%;
+    margin-bottom: 4%;
+}
+
+.bdgersona{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bdgtProgressDiv{
+    background-color: var(--white200);
+    border-radius: 8px;
+    width: 100%;
+}
+
+.bdgtMetricText{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 2%;
+}
+
+.bdgtUsed{
+    padding: 2% 0;
+}
+
+#bdgtUsed1{
+    width: 40%;
+    border-radius: 12px;
+    background-color: var(--green);
+}
+
+.bdgersona{
+    width: 90%;
+    margin-bottom: 3.5%;
+    display: flex;
+    align-items: center;
+}
+
+.bdgersona img{
+    width: 12%;
+}
+
+.bdgtMetric{
+    width: 85%;
+    padding-left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#bgttopsvg{
+    width: 90%;
+}
+
+.bdgtOwner{
+    font-size: 0.7rem;
+    margin-left: 2%;
+}
+
+.budgtAmt{
+    width: 50%;
+    font-size: 0.7rem;
+    display: flex;
+    align-items: flex-end;
+    justify-content: end;
 }
