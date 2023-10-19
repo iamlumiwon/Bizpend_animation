@@ -1,0 +1,271 @@
+body{
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+:root{
+    --white200: #F9F9F9;
+    --brntOrange: #FF9152;
+    --gold: #DEB145;
+    --green: #19C37D;
+    --light-green: #EFFFED;
+}
+
+.bodyContainer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.featuresContainer{
+    width: 80%;
+    padding: 10%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.featureList{
+    width: 29%;
+    height: 448px;
+    background-color: var(--white200);
+    padding: 1.5%;
+    border-radius: 12px;
+    overflow: hidden;
+    justify-content: center;
+    margin-bottom: 2%;
+}
+
+.featureImage{
+    width: 100%;
+}
+
+#cardFimg{
+    left: -200px;
+    bottom: -50px;
+    padding-top: 6%;
+    transform: rotate(-22.14deg);
+    position: relative;
+}
+
+.featureImage img{
+    width: 90%;
+}
+
+#cardFeat:hover .featureImage{
+    transition: all ease-in-out 300ms;
+    position: relative;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transform: rotate(0deg);
+}
+
+#cardFeat:hover .featureImage img{
+    width: 100%;
+}
+
+#pyrllFimg{
+    display: flex;
+    flex-wrap: wrap;
+    background: var(--brntOrange);
+    border-radius: 12px;
+    padding: 5%;
+    width: 90%;
+    position: relative;
+    bottom: -130px;
+}
+
+#pyrsvg1{
+    width: 40%;
+    margin-right: 10%;
+    margin-bottom: 2%;
+}
+
+#pyrsvg2{
+    width: 50%;
+    margin-left: 20%;
+    margin-bottom: 2%;
+}
+
+#pyrsvg3{
+    width: 100%;
+}
+
+#pyrllFeat:hover #pyrllFimg{
+    transition: all ease-in-out 300ms;
+    bottom: 0;
+    margin-top: 15%;
+    padding-top: 8%;
+    padding-bottom: 8%;
+}
+
+#pyrllFeat:hover #pyrsvg1{
+    transition: all ease-in-out 300ms;
+    width: 45%;
+    margin-right: 5%;
+}
+
+#pyrllFeat:hover #pyrsvg2{
+    transition: all ease-in-out 300ms;
+    margin-left: 0;
+}
+
+#inbillFimg{
+    width: 98.5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 12px;
+    border: 4px solid var(--gold);
+    margin-top: 15%;
+    padding-top: 0;
+    overflow: hidden;
+    height: 73px;
+}
+
+.overflowDiv{
+    width: 100%;
+    position: relative;
+    top: -220px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#blurinsvg{
+    width: 15%;
+    position: relative;
+    left: 0;
+    right: 0;
+}
+
+#invbillsvg1, #invbillsvg2, #invbillsvg3,#invbillsvgdefault{
+    width: 100%;
+}
+
+#invbillsvg3{
+    border-bottom-right-radius: 12px;
+    border-bottom-left-radius: 12px;
+}
+
+#inbillFeat:hover #inbillFimg{
+    transition: all ease-in-out 300ms;
+    height: 40%;
+}
+
+#inbillFeat:hover #invbillsvgdefault{
+    transition: all ease-in-out 300ms;
+    display: none;
+}
+
+#inbillFeat:hover .overflowDiv{
+    transition: all ease-in-out 300ms;
+    top:18%;
+}
+
+#barsFimg, #vendorFimg{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#barsnumFlow{
+    position: relative;
+    top: 25%;
+    right: -100%;
+}
+
+#barssvg1{
+    position: relative;
+    bottom: -50px;
+}
+
+#insrepFeat:hover #barssvg1{
+    transition: all ease-in-out 300ms;
+    bottom: -25px;
+}
+
+#insrepFeat:hover #barsnumFlow{
+    transition: all ease-in-out 300ms;
+    right: 10%;
+    z-index: 1;
+}
+
+#vendorFimg{
+    position: relative;
+    width: 100%;
+    left: -40%;
+    margin-top: 12%;
+}
+
+#venddorFeat:hover #vendorFimg{
+    transition: all ease-in-out 300ms;
+    left: 0;
+    margin-top: 4%;
+}
+
+#venddorFeat:hover #vendorsvg{
+    transition: all ease-in-out 300ms;
+    width: 95%;
+}
+
+
+#expcheckFlow{
+    position: relative;
+    top: -80%;
+}
+
+#expenseFimg{
+    background: var(--green);
+    padding-top: 4%;
+    padding-bottom: 4%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 12px;
+    position: relative;
+    bottom: -20%;
+}
+
+#expsvg1,#expsvg2,#expsvg3{
+    width: 90%;
+    margin-bottom: 4%;
+}
+
+#expsucsssvg{
+    display: none;
+}
+
+#expenseFeat:hover #expenseFimg{
+    transition: all ease-in-out 300ms;
+    bottom: 0;
+    background: var(--light-green);
+    padding-top: 7%;
+    padding-bottom: 7%;
+}
+
+#expenseFeat:hover #expcheckFlow{
+    transition: all ease-in-out 300ms;
+    top: 6%;
+    z-index:1
+}
+
+#expenseFeat:hover #expsvg1, #expenseFeat:hover #expsvg2, #expenseFeat:hover #expsvg3{
+    transition: all ease-in-out 300ms;
+    display: none;
+}
+
+#expenseFeat:hover #expsucsssvg{
+    transition: all ease-in-out 300ms;
+    display: block;
+}
+
+#expsvgcheck{
+    width: 12%;
+}
