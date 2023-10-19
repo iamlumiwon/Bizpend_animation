@@ -14,6 +14,7 @@ body{
     --light-green: #EFFFED;
     --white: #ffffff;
     --lightpurple-300: #D5D5F5;
+    --error-red: #CF491E;
 }
 
 .bodyContainer{
@@ -40,6 +41,11 @@ body{
     overflow: hidden;
     justify-content: center;
     margin-bottom: 2%;
+}
+
+.featureList p{
+    font-size: 0.9rem;
+    line-height: 1.5rem;
 }
 
 .featureImage{
@@ -157,7 +163,8 @@ body{
 
 #inbillFeat:hover #inbillFimg{
     transition: all ease-in-out 300ms;
-    height: 40%;
+    height: 41.5%;
+    
 }
 
 #inbillFeat:hover #invbillsvgdefault{
@@ -281,11 +288,13 @@ body{
     padding: 5% 0;
     border: 4px solid var(--lightpurple-300);
     border-radius: 12px;
+    position: relative;
+    bottom: -15%;
 }
 
 #bgttopsvg{
     width: 90%;
-    margin-bottom: 4%;
+    margin-bottom: 6%;
 }
 
 .bdgersona{
@@ -310,28 +319,46 @@ body{
 }
 
 .bdgtUsed{
-    padding: 2% 0;
+    padding: 1.5% 0;
+    border-radius: 12px;
+}
+
+.usdAmt{
+    display: none;
+}
+
+#bdgtUsed1, #bdgtUsed2, #bdgtUsed3{
+    width: 0;
 }
 
 #bdgtUsed1{
-    width: 40%;
-    border-radius: 12px;
+    /* width: 60%; */
+    background-color: var(--gold);
+}
+
+#bdgtUsed2{
+    /* width: 40%; */
     background-color: var(--green);
+}
+
+#bdgtUsed3{
+    /* width: 92%; */
+    background-color: var(--error-red);
 }
 
 .bdgersona{
     width: 90%;
-    margin-bottom: 3.5%;
+    margin-bottom: 5%;
     display: flex;
     align-items: center;
 }
 
 .bdgersona img{
-    width: 12%;
+    width: 10%;
 }
 
 .bdgtMetric{
-    width: 85%;
+    width: 84%;
     padding-left: 0;
     display: flex;
     flex-direction: column;
@@ -344,7 +371,7 @@ body{
 
 .bdgtOwner{
     font-size: 0.7rem;
-    margin-left: 2%;
+    margin-left: 0;
 }
 
 .budgtAmt{
@@ -353,4 +380,30 @@ body{
     display: flex;
     align-items: flex-end;
     justify-content: end;
+}
+
+#budgetFeat:hover #bdgtUsed1{
+    transition: all ease-in-out 300ms;
+    width: 60%;
+}
+
+#budgetFeat:hover #bdgtUsed2{
+    transition: all ease-in-out 300ms;
+    width: 40%;
+}
+
+#budgetFeat:hover #bdgtUsed3{
+    transition: all ease-in-out 300ms;
+    width: 92%;
+}
+
+#budgetFeat:hover #budgetsFimg{
+    transition: all ease-in-out 300ms;
+    position: relative;
+    bottom: 0;
+}
+
+#budgetFeat:hover .usdAmt{
+    transition: all ease-in-out 300ms;
+    display: block;
 }
